@@ -1,0 +1,16 @@
+@import url("index.css");
+
+footer {
+    background-color: var(--secondary-color);
+    margin-top: 2rem;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--primary-color);
+}
+
+.social-icon {
+    padding: 5px;
+    width: 40px;
+}

@@ -1,0 +1,50 @@
+@import url("index.css");
+
+main {
+    color: var(--secondary-color);
+}
+
+.noticia-min, .section-noticias h2 {
+    border-left: 5px solid rgb(0, 36, 145);
+}
+
+.noticia, .noticia-min {
+    transition: all 0.5s ease;
+}
+
+.noticia a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+span {
+    font-weight: 700;
+    color: rgb(0, 36, 145);
+}
+
+.section-noticias {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.noticia:hover, .noticia-min:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
+}
+
+.main-title {
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+.noticia-uno {
+    width: 80%;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,62 @@
+@import url("index.css");
+
+header {
+    position: sticky;
+    top: 0px;
+}
+
+.header-nav {
+    background-color: var(--secondary-color);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.icon {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0 1rem;
+}
+
+.icon::after {
+    content: "_";
+    position: absolute;
+    color: var(--primary-color);
+    animation: alternar 1s infinite;
+}
+
+@keyframes alternar {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.header-nav-items {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1rem;
+}
+
+.header-nav-items a{
+    display: block;
+    padding: 0 1rem;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.header-nav-items a:hover{
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
